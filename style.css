@@ -119,3 +119,16 @@ header li {
   margin:auto;
   text-align: center;
 }
+
+.logoxarxes{
+  display: inline-block;
+  vertical-align: middle;
+  padding-right: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+}
+
+.logoxarxes a{
+  padding: 0 0 0 0;
+}
