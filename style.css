@@ -1,0 +1,121 @@
+
+body{
+    margin-left:10%; /*Fer margin adaptatiu (mòbils, etc) algun dia*/
+    font-family:Arial, Helvetica, sans-serif;
+    margin-top:max(120px, min(86px, 8%));
+    margin-right: 10%;
+    margin-bottom: 20px;
+    line-height: 1.2;
+    text-align: justify;
+    position: relative;
+    font-size: 14pt;
+    line-height:130%;
+}
+
+header{
+	position:fixed;
+   left: 0px;
+   right: 0px;
+   top:0px;
+   margin-top: 0;
+   box-shadow: 0 0 0 0 black;
+   height: max-content;
+   padding: 0 0 0 0;
+}
+
+
+
+.dark-mode {
+  background-color: rgb(16, 16, 16);
+  color: white;
+}
+
+a{
+  color:#730c0c
+}
+
+.dark-mode a{
+  color: #c35d5d
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #381e1e;
+  overflow-x: scroll;
+  overflow: hidden;
+  padding: 0 0 0 0;
+}
+
+header ul {
+  margin: auto;
+  text-align: center;
+  list-style-type: none;
+  padding: 0 0;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  background-color: #381e1e;
+  white-space:nowrap;
+  height:min-content;
+}
+
+header li {
+  display:inline-block;
+  padding: 0 0;
+  overflow: visible !important;
+}
+
+.postopnav {
+  background-color: #381e1e;
+  border-color: #474747;
+  overflow: hidden;
+  color: #f2f2f2;
+  padding: 4px 16px;
+}
+
+.postheader{
+   left: 0px;
+   right: 0px;
+   top:0px;
+   margin-top: 0;
+   box-shadow: 0 0 0 0 black;
+   height: max-content;
+   padding: 0 0 0 0;
+}
+
+.commonlist li{
+  margin: 10px 0;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a, button {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover, button{
+  background-color: #ddd;
+  color: black;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+
+.noticebox{
+  width: min(100%, 600px);
+  height: max-content;
+  padding: 20px 10px;
+  border: 5px solid #730c0c;
+  background-color: #fcc8c8;
+  border-radius: 5px;
+  font-size: 18pt;
+  margin:auto;
+  text-align: center;
+}
