@@ -103,6 +103,11 @@ header li {
   color: black;
 }
 
+.activea {
+  background-color: #593030;
+  color: rgb(255, 255, 255);
+}
+
 /* Hide the link that should open and close the topnav on small screens */
 .topnav .icon {
   display: none;
@@ -131,4 +136,29 @@ header li {
 
 .logoxarxes a{
   padding: 0 0 0 0;
+}
+
+
+.collapsible {
+  background-color: #381e1e;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 17px;
+}
+
+.active, .collapsible:hover {
+  background-color: #593030;
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #ecdbdb;
 }
