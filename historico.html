@@ -12,19 +12,19 @@
 <meta name="viewport" content="width=device-width; initial-scale=1.0;">
 </head>
 
-
 <header>
   
   <div class="topnav">
     <ul>
-    <li><a href="index.html">Inicio</a></li>
-    <li><a href="poma.html">pOMA</a></li>
-    <li><a href="pera.html">PErA</a></li>
-    <li><a href="propon.html">Propón problemas</a></li>
-    <li><a href="historico.html">Histórico</a></li>
-    <li><a href="contacto.html">Contacto</a></li>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="poma.html">pOMA</a></li>
+      <li><a href="pera.html">PErA</a></li>
+      <li><a href="propon.html">Propón problemas</a></li>
+      <li><a href="historico.html", class="activea">Histórico</a></li>
+      <li><a href="preparate.html">Preparación</a></li>
     <!-- <a href="#">About</a>  -->
-    <li><a onclick="setTheme()", style="float: right;"> Ugh mis ojos </a></li>
+    <!-- <li><a onclick="setTheme()", style="float: right;"> Ugh mis ojos </a></li> -->
+      <li><a href="contacto.html">Contacto</a></li>
     <li><a href="https://discord.gg/ewpppcpHgu" class="logoxarxes" style="padding: 7px 9px;">
       <img src="img/logo disc.png" width="31"style="overflow: hidden">  
     </a></li>
@@ -57,10 +57,75 @@ function setTheme() {
   También se pueden encontrar los enunciados, con soluciones de otros estudiantes,
   en la <a href="https://artofproblemsolving.com/community/c3626668_poma_and_pera_m
   athematical_olympiads">colección de AoPS de la pOMA y la PErA</a>. 
-
 </p>
+<p>
+<h3 style="margin-bottom: 13px;">Medallero</h3>
+Típicamente otorgamos tres medallas de oro, tres de plata, y tres de bronce. 
+Si hay empates puede haver más medallas de lo habitual de alguno de los tipos.
+</p>
+<button class="collapsible"><b>PErA 2024</b></button>
+<div class="content">
+  <p style="line-height: 1.7;">
+    &#129351  Antonio Laso González
+    <br>&#129351  Pablo Troyano Plata
+    <br>&#129351  Justo Juan Salcedo Otero
+    <br>&#129352  Gerard Capuz Francisco
+    <br>&#129352  Francisco Esteve Barceló
+    <br>&#129352  Diego Alonso Domínguez
+    <br>&#129353  Alejandro Gómez-Olano Espluga
+    <br>&#129353  Fernando González Vivanco
+    <br>&#129353  Pablo Freire Fernández
+  </p>
+</div>
+<br>
+<button class="collapsible"><b>pOMA 2023 - Nivel avanzado</b></button>
+<div class="content">
+  <p style="line-height: 1.7;">
+    &#129351  Dan Vancea
+    <br>&#129351  Pablo Freire
+    <br>&#129351  Gerard Capuz
+    <br>&#129352  Fernando González
+    <br>&#129352  Javier Belausteguigoitia
+    <br>&#129352  Pablo Troyano
+    <br>&#129353  Raquel Freire
+    <br>&#129353  Francisco Esteve
+    <br>&#129353  Miguel Ángel Donaire
+  </p>
+</div>
+<br>
+<button class="collapsible"><b>pOMA 2023 - Nivel de iniciación</b></button>
+<div class="content">
+  <p style="line-height: 1.7;">
+    &#129351  Gabriel Mateo Prado
+    <br>&#129351  Jan Sangüesa
+    <br>&#129351  Tomás Griffiths
+    <br>&#129352  Ot Santacreu
+    <br>&#129352  Jialiang Zhang
+    <br>&#129352  Pablo París Martínez
+    <br>&#129353  Carlos Paz Castro
+    <br>&#129353  Xosé Asorey Rendo
+    <br>&#129353  Octavi Costa Frers
+    <br>&#129353  Xian Sánchez
+  </p>
+</div>
 
-
+<script>
+  var coll = document.getElementsByClassName("collapsible");
+  var i;
+  
+  for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var content = this.nextElementSibling;
+      if (content.style.maxHeight){
+        content.style.maxHeight = null;
+      } else {
+        content.style.maxHeight = content.scrollHeight + "px";
+      } 
+    });
+  }
+  </script>
+  
 
 </body>
 
