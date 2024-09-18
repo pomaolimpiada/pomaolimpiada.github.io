@@ -12,6 +12,21 @@ body{
     line-height:130%;
 }
 
+@media only screen and (max-width: 800px){
+  body{
+    margin-left: 6%;
+    margin-right: 6%;
+    font-size: 12pt;
+  }
+  .commonlist{
+    padding-left: 0;
+    list-style: none;
+  }
+  .commonlist ul{
+    padding-left: 15px;
+  }
+}
+
 header{
 	position:fixed;
    left: 0px;
@@ -114,7 +129,7 @@ header li {
 }
 
 .noticebox{
-  width: min(100%, 600px);
+  width: min(92%, 600px);
   height: max-content;
   padding: 20px 10px;
   border: 5px solid #730c0c;
