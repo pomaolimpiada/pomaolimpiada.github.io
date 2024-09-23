@@ -1,2 +1,2 @@
 # web
-Web de la pOMA i la PErA
+Web de la pOMA i la PErA.
