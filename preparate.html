@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
 <title>Poma</title>
-
+<script src="theme-toggle.jl"></script>
 <link rel="stylesheet" href="style.css">
 <link rel="icon" type="image/png" href="img/logome.png" >
 
@@ -28,9 +28,14 @@
     <li><a href="https://discord.gg/ewpppcpHgu" class="logoxarxes" style="padding: 7px 9px;">
       <img src="img/logo disc.png" width="31"style="overflow: hidden">  
     </a></li>
+    <li>
+    <button class="toggle-btn" onclick="toggleMode()">
+        <img id="icon" src="moon.svg" alt="Moon Icon" style="width: 24px; height: 24px;">
+    </button>
+    </li>
+  </ul>
   </ul>
   </div>
-
 </header>
 
 <div class="postheader">
@@ -41,12 +46,6 @@
 
 
 <body>
-<script>
-function setTheme() {
-  var element = document.body;
-  element.classList.toggle("dark-mode");
-}
-</script>
 <p>
   Si tienes ganas de entrenar para la olimpiada, te recomendamos pasarte por las 
   clases de preparación de la UPC. Las clases son en castellano y por google meet, 
@@ -69,7 +68,7 @@ Hay más información disponible en la
 
 
 
-
+<script src="theme-toggle.jl"></script>
 </body>
 
 

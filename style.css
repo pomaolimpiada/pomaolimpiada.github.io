@@ -10,7 +10,7 @@ body{
     position: relative;
     font-size: 14pt;
     line-height:130%;
-    transition: background-color 0.3s, color 0.3s;
+    /*transition: background-color 0.05s, color 0.3s;*/
 }
 
 /* Light mode styles */
@@ -194,8 +194,16 @@ header li {
   font-size: 17px;
 }
 
+.dark-mode .content{
+  background-color: #1e1515;
+}
+
 .active, .collapsible:hover {
   background-color: #593030;
+}
+
+.dark-mode .noticebox{
+  color: #730c0c;
 }
 
 .content {

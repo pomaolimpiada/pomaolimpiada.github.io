@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
 <title>Poma</title>
-
+<script src="theme-toggle.jl"></script>
 <link rel="stylesheet" href="style.css">
 <link rel="icon" type="image/png" href="img/logome.png" >
 
@@ -10,6 +10,7 @@
 <meta name="keywords" content="poma, pera, matemáticas, competición">
 <meta name="description" content="Web de la poma y la pera">
 <meta name="viewport" content="width=device-width; initial-scale=1.0;">
+
 </head>
 
 
@@ -29,6 +30,12 @@
     <li><a href="https://discord.gg/ewpppcpHgu" class="logoxarxes" style="padding: 7px 9px;">
       <img src="img/logo disc.png" width="31"style="overflow: hidden">  
     </a></li>
+    <li>
+    <button class="toggle-btn" onclick="toggleMode()">
+        <img id="icon" src="moon.svg" alt="Moon Icon" style="width: 24px; height: 24px;">
+    </button>
+    </li>
+  </ul>
   </ul>
   </div>
 
@@ -55,7 +62,7 @@ function setTheme() {
 </p>
 
 
-
+<script src="theme-toggle.jl"></script>
 </body>
 
 
