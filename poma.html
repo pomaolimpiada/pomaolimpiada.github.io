@@ -29,6 +29,11 @@
     <li><a href="https://discord.gg/ewpppcpHgu" class="logoxarxes" style="padding: 7px 9px;">
       <img src="img/logo disc.png" width="31"style="overflow: hidden">  
     </a></li>
+    <li>
+      <button class="toggle-btn" onclick="toggleMode()">
+          <img id="icon" src="moon.svg" alt="Moon Icon" style="width: 24px; height: 24px;">
+      </button>
+    </li>
   </ul>
   </div>
 
@@ -43,24 +48,20 @@
 
 <body>
 
+<p>
+  La pOMA es una olimpiada matemática online organizada por exolímpicos del equipo 
+  español de la IMO, con el objetivo de dar una experiéncia de prática real
+  en concurso antes de que lleguen las olimpiadas regionales y la fase local.
+</p>
+
 <a href="poma.html">
   <div class="noticebox", style="margin-top: 20px;">
     <b>¡Se han abierto inscripciones para la pOMA 2024!</b>
   </div>
 </a>
 
-<script>
-function setTheme() {
-  var element = document.body;
-  element.classList.toggle("dark-mode");
-}
-</script>
 <p>
-  La pOMA es una olimpiada matemática online organizada por exolímpicos del equipo 
-  español de la IMO, con el objetivo de dar una experiéncia de prática real
-  en concurso antes de que lleguen las olimpiadas regionales y la fase local.
-
-  <ul class="commonlist">
+<ul class="commonlist">
   <li>
   <b>Fechas y formato:</b> Un sábado por la tarde y un domingo por la mañana, a principios de noviembre.
   Cada día habrá una prueba de tres horas y media con tres problemas a resolver. 
@@ -89,6 +90,7 @@ function setTheme() {
 </p>
 
 
+<script src="theme-toggle.jl"></script>
 
 </body>
 

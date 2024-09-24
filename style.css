@@ -10,7 +10,37 @@ body{
     position: relative;
     font-size: 14pt;
     line-height:130%;
+    transition: background-color 0.3s, color 0.3s;
 }
+
+/* Light mode styles */
+.light-mode {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* Dark mode styles */
+.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.topnav .toggle-btn {
+  float: left; 
+  display: flex; /* Use flexbox for alignment */
+  align-items: center; /* Center the icon and text vertically */
+  color: #f2f2f2; 
+  text-align: center;
+  padding: 14px 16px; 
+  text-decoration: none;
+  background-color: inherit; /* Same background as topnav */
+  border: none; /* Remove default button border */
+}
+
+.topnav .toggle-btn img {
+  margin-right: 8px; /* Space between icon and text */
+}
+
 
 @media only screen and (max-width: 800px){
   body{
@@ -37,8 +67,6 @@ header{
    height: max-content;
    padding: 0 0 0 0;
 }
-
-
 
 .dark-mode {
   background-color: rgb(16, 16, 16);
