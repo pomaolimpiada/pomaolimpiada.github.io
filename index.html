@@ -29,10 +29,17 @@
     <li><a href="https://discord.gg/ewpppcpHgu" class="logoxarxes" style="padding: 7px 9px;">
       <img src="img/logo disc.png" width="31"style="overflow: hidden">  
     </a></li>
+    <li>
+    <button class="toggle-btn" onclick="toggleMode()">
+        <img id="icon" src="moon.svg" alt="Moon Icon" style="width: 24px; height: 24px;">
+    </button>
+    </li>
+  </ul>
   </ul>
   </div>
 
 </header>
+
 
 <div class="postheader">
 <div class="postopnav">
@@ -40,15 +47,7 @@
 </div>
 </div>
 
-
 <body>
-<script>
-function setTheme() {
-  var element = document.body;
-  element.classList.toggle("dark-mode");
-}
-</script>
-
 <p>
   La pOMA es una olimpiada matemática amistosa organizada por los exolímpicos del equipo español de la IMO, 
   con el objetivo de dar una experiéncia de prática real en concurso antes de que lleguen las 
@@ -70,7 +69,8 @@ function setTheme() {
 <p>
 Las olimpiadas matemáticas son un tipo de competición de resolución de problemas para estudiantes preuniversitarios.
 Los problemas de olimpiada se caracterizan por ser difíciles, y necesitan de mucha creatividad e ingenio para resolverse.
-</p><p>
+</p>
+<p>
 Desde hace décadas, España envía un equipo nacional a la 
 <a href="https://www.imo-official.org/">Olimpiada Internacional de Matemáticas</a> (IMO),
 la competición de matemáticas más prestigiosa del mundo; y también a la
@@ -82,8 +82,10 @@ la competición de matemáticas más prestigiosa del mundo; y también a la
   a través de las <a href="https://www.rsme.es/olimpiada-matematica-espanola/sitios-de-primeras-fases-de-la-olimpiada-matematica-espanola/">
     fases locales</a>. También se celebra anualmente el 
     <a href="https://catedramirpuig.upc.edu/ca/math-activities/math-contest">
-    BarcelonaTech Math Conetst</a>, una olimpiada a nivel nacional en la que se elige al equipo español para el EGMO.
+    BarcelonaTech Math Contest</a>, una olimpiada a nivel nacional en la que se elige al equipo español para el EGMO.
 </p>
+<script src="theme-toggle.jl"></script>
+
 </body>
 
 
