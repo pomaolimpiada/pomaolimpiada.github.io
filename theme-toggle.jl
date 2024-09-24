@@ -34,5 +34,13 @@ function loadTheme() {
     }
 }
 
+window.onload = loadTheme;
+
+window.onload = function() {
+    loadTheme();
+    // Ensure to add dark mode class immediately to prevent flashing
+    document.body.classList.add(localStorage.getItem('theme') === 'dark' ? 'dark-mode' : 'light-mode');
+};
+
 // Load the theme when the page loads
 window.onload = loadTheme;
